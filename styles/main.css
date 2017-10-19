@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+
+.navbar{
+	background-color: #333;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+.navbar a:hover {
+    background-color: #40766b;
+    color: #fff;
+}
+.navbar #icon {
+    display: none;
+}
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  color: #ffffff;
+  height: auto;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+.visi {
+  padding: 10px;
+	text-align:center;
+	background-color:lightgrey;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-style: "Arial"
+  background-size:contain;
+}
+.news{
+	background-color:lightgrey;
+	background-size:contain;
+	margin-bottom:15px;
+}
+footer{
+    height:inherit;
+    line-height:inherit;
+    background:#333;
+    color:#fff;
+	  position:static;
+	  width:100%;
+    padding: 10px;
+}
+
+#contactus{
+
+}
+
+#maps {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+#emailfeedback{
+  
+}
